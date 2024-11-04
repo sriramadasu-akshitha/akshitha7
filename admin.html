@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>admin</title>
+<style>
+     body {
+            background-color: #faf7f7;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+        .container-fluid {
+            width: 350px;
+            height: max-content;
+            border-radius: 15px;
+            overflow: hidden;
+            margin-top: 1rem;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            position: relative;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            width: 100px;
+            height: 100px;
+        }
+        .header h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgba(0, 0, 0, 0.1);
+            font-size: 3rem;
+            margin: 0;
+            pointer-events: none;
+        }
+        h3 {
+            color: #4a4a4a;
+            line-height: 100px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .user {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 150px; 
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .navbar {
+            height: 5rem;
+            width: 100%;
+        }
+        .company-details {
+            height: 3rem;
+            width: 100%;
+            margin-top: 2rem;
+            margin-bottom: 5rem;
+            display: flex;
+            justify-content: center;
+        }
+        img {
+            height: 100px;
+            object-fit: cover;
+            width: 100px;
+        }
+        .company-details h3 {
+            margin: 0;
+            text-align: center;
+        }
+        .welcome-message {
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+            color: #4a4a4a;
+        }
+</style>
+</head>
+<body>
+  <nav class="navbar bg-dark border-bottom border-body justify-content-center" data-bs-theme="dark">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link text-light" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-light" href="./login.html">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-light" href="#">Contact us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-light" href="#">About</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="company-details">
+  <img src="company-logo.jpg" alt="Company Logo">
+  <h3 class="company-name">National Bureau Of Plant Genetic Resources Regional Station</h3>
+</div>
+
+<div class="welcome-message">
+  Welcome Admin...
+</div>
+    <div class="user">
+        <div class="u1">
+            <a href="insert.html">
+                <button>Insert</button>
+              </a>
+              <a href="delete.html">
+                <button>Delete</button>
+              </a>
+              <a href="update.html">
+                <button>Update</button>
+              </a>
+              <a href="search.html">
+                <button>Search</button>
+              </a>
+        </div>
+        <div class="u2"></div>
+    </div>
+    
+</body>
+</html>
